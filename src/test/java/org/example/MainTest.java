@@ -13,9 +13,15 @@ class MainTest {
     }
 
     @Test
-    void sub_shouldReturn5_whenCalledWith8And3() {
-        int expected = 5;
-        assertEquals(expected, Main.sub(8,3));
+    void multi_shouldReturn24_whenCalledWith8And3() {
+        int expected = 24;
+        assertEquals(expected, Main.multi(8,3));
+    }
+
+    @Test
+    void multi_shouldReturn0_whenCalledWith8And0() {
+        int expected = 0;
+        assertEquals(expected, Main.multi(8,0));
     }
 
     @Test
@@ -28,6 +34,12 @@ class MainTest {
     void convertToUppercase_shouldReturnTEXT_whenCalledWithTeXt() {
         String expected = "TEXT";
         assertEquals(expected, Main.convertToUppercase("TeXt"));
+    }
+
+    @Test
+    void convertToUppercase_shouldReturnTEXT_whenCalledWithTEXT() {
+        String expected = "TEXT";
+        assertEquals(expected, Main.convertToUppercase("TEXT"));
     }
 
     @Test

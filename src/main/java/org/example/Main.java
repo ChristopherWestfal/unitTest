@@ -7,7 +7,7 @@ public class Main {
 
         System.out.println(add(x, y));
 
-        System.out.println(sub(x, y));
+        System.out.println(multi(x, y));
 
     }
 
@@ -15,8 +15,8 @@ public class Main {
         return x + y;
     }
 
-    public static int sub(int x, int y){
-        return x - y;
+    public static int multi(int x, int y){
+        return x * y;
     }
 
     public static String convertToUppercase(String str){
