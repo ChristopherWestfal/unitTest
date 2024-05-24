@@ -25,6 +25,12 @@ class MainTest {
     }
 
     @Test
+    void convertToUppercase_shouldReturnTEXT_whenCalledWithTeXt() {
+        String expected = "TEXT";
+        assertEquals(expected, Main.convertToUppercase("TeXt"));
+    }
+
+    @Test
     void isEven_shouldReturnTrue_whenCalledWith2() {
         assertTrue(Main.isEven(2));
     }
